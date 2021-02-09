@@ -6,6 +6,8 @@ public class CarSpawner : MonoBehaviour
 
     public GameObject car;
 
+    public Transform[] spawnPoints;
+
     float nextTimeToSpawn = 0f;
 
     void Update ()
@@ -19,7 +21,10 @@ public class CarSpawner : MonoBehaviour
 
     void SpawnCar ()
     {
-        Instantiate(car);
+        int randomIndex = Random.Range(0, spawnPoints.Length);
+        Transform spawnPoint = spawnPoints[randomIndex];
+
+        Instantiate(car, spawnPoint.position, spawnPoint.rotation);
 
     }
 }

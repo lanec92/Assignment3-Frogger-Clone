@@ -18,7 +18,7 @@ public class Car : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 forward = new Vector2(transform.right.x, transform.right.y);
-        rb.MovePosition(rb.position + forward * Time.fixedDeltaTime*speed);
+        rb.MovePosition(rb.position + forward * Time.fixedDeltaTime * speed);
 
 
     }
