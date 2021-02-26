@@ -5,14 +5,19 @@ public class Car : MonoBehaviour
 
     public Rigidbody2D rb;
 
-    public float minSpeed = 8f;
-    public float maxSpeed = 12f;
+   // public float minSpeed = 8f;
+    //public float maxSpeed = 12f;
 
-    float speed = 1f;
+    public float speed = 5f;
 
-    private void Start()
+   /* private void Start()
     {
         speed = Random.Range(minSpeed, maxSpeed);
+    }*/
+
+    public void AdjustSpeed(float newSpeed)
+    {
+        speed = newSpeed;
     }
 
     void FixedUpdate()
