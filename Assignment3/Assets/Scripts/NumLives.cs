@@ -19,7 +19,6 @@ public class NumLives : MonoBehaviour
         else
         {
             livesText.text = PickLives.playerLives.ToString();
-
         }
     }
 
