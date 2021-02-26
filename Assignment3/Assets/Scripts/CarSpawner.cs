@@ -23,8 +23,15 @@ public class CarSpawner : MonoBehaviour
     {
         int randomIndex = Random.Range(0, spawnPoints.Length);
         Transform spawnPoint = spawnPoints[randomIndex];
-
         Instantiate(car, spawnPoint.position, spawnPoint.rotation);
-
+      //  DestroyCar(spawnPoint);
     }
+
+   // void DestroyCar(Transform spawnpoint)
+   // {
+
+    //    GameObject clone = (GameObject)Instantiate(car, spawnpoint.position, spawnpoint.rotation);
+ //       Destroy(clone, 8.0f);
+  //      Debug.Log("DestroyClone");
+ //   }
 }

@@ -829,7 +829,7 @@ GameObject:
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &468275661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -842,7 +842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23e9a3624a413324da273af07a3e1b77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blah: {fileID: 6639639063148799944, guid: 5c54e67dd3acb454b921170187683ec9, type: 3}
+  car: {fileID: 0}
 --- !u!61 &468275662
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3114,7 +3114,7 @@ GameObject:
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1889105927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3127,7 +3127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23e9a3624a413324da273af07a3e1b77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blah: {fileID: 0}
+  car: {fileID: 0}
 --- !u!61 &1889105928
 BoxCollider2D:
   m_ObjectHideFlags: 0
