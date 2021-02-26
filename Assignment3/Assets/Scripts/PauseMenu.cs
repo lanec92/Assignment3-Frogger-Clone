@@ -40,8 +40,10 @@ public class PauseMenu : MonoBehaviour
 
     public void NewGame()
     {
-
+        Score.CurrentScore = 0;
+        PickLives.playerLives = 3;
         SceneManager.LoadScene(1);
+        Resume();
     }
 
     public void QuitGame()
@@ -49,6 +51,11 @@ public class PauseMenu : MonoBehaviour
 
         Application.Quit();
         Debug.Log("Quit Game");
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 
 }
