@@ -17,16 +17,5 @@ public class Frog : MonoBehaviour
             rb.MovePosition(rb.position + Vector2.down);
     }
 
-    void OnTriggerEnter2D (Collider2D col)
-    {
-        if (col.tag == "Car")
-        {
-            Debug.Log("WE LOST!");
-            Score.CurrentScore = 0;
-            PickLives.playerLives -= 1;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
-
-    }
     
 }
