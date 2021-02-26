@@ -4,7 +4,7 @@ public class Frog : MonoBehaviour
 {
     public Rigidbody2D rb;
 
-   
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
@@ -19,11 +19,13 @@ public class Frog : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.tag == "Car")
+        if (col.tag == "Car")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Debug.Log("WE LOST!");
+            Score.CurrentScore = 0;
             PickLives.playerLives -= 1;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
-    }
 
+    }
 }
