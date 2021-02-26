@@ -8,13 +8,49 @@ public class Frog : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
-            rb.MovePosition(rb.position + Vector2.right);
+        {
+            if (transform.position.x < 8f)
+            {
+                rb.MovePosition(rb.position + Vector2.right);
+
+            }
+            else
+            {
+                Vector2 newPos = new Vector2(7f, -4f);
+                transform.position = newPos;
+            }
+
+        }
         else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
-            rb.MovePosition(rb.position + Vector2.left);
+        {
+            if (transform.position.x > -8f)
+            {
+                rb.MovePosition(rb.position + Vector2.left);
+
+            }
+            else
+            {
+                Vector2 newPos = new Vector2(-7f, -4f);
+                transform.position = newPos;
+            }
+        }
+
         else if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
             rb.MovePosition(rb.position + Vector2.up);
+
         else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
-            rb.MovePosition(rb.position + Vector2.down);
+        {
+            if (transform.position.y > -4f)
+            {
+                rb.MovePosition(rb.position + Vector2.down);
+
+            }
+            else
+            {
+                Vector2 newPos = new Vector2(transform.position.x, -4f);
+                transform.position = newPos;
+            }
+        }
     }
 
     void OnTriggerEnter2D(Collider2D col)
