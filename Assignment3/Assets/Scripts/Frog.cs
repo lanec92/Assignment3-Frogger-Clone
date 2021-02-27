@@ -58,7 +58,7 @@ public class Frog : MonoBehaviour
         if (col.tag == "Car")
         {
             Debug.Log("WE LOST!");
-            Score.CurrentScore = 0;
+            //Score.CurrentScore = 0;
             PickLives.playerLives -= 1;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }

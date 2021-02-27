@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class NumLives : MonoBehaviour
 {
-   
     public Text livesText;
 
     void Awake()
@@ -26,7 +25,7 @@ public class NumLives : MonoBehaviour
     {
         if (PickLives.playerLives == 0)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(2);
         }
         else
         {
