@@ -6,7 +6,11 @@ public class Score : MonoBehaviour
 
     public Text scoreText;
 
-    void Start ()
+    void Awake ()
+    {
+        scoreText.text = CurrentScore.ToString();
+    }
+    void Update()
     {
         scoreText.text = CurrentScore.ToString();
     }

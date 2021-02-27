@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
         Debug.Log("playerName is :" + playername.text);
         PlayerName.playernamestr = playername.text;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
     }
 
     public void QuitGame()

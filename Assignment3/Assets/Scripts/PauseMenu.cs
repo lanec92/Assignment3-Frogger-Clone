@@ -9,6 +9,11 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject PauseMenuUI;
 
+    void Awake()
+    {
+        Resume();
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -55,6 +60,7 @@ public class PauseMenu : MonoBehaviour
 
     public void MainMenu()
     {
+        Score.CurrentScore = 0;
         SceneManager.LoadScene(0);
     }
 
